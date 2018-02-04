@@ -1,29 +1,27 @@
-import Typography from 'typography';
-
-const config = require('../../config/SiteConfig');
+import Typography from "typography";
 
 const typography = new Typography({
-  title: 'Minimal',
-  baseFontSize: config.baseFontSize,
+  title: "Minimal",
+  baseFontSize: "16px",
   baseLineHeight: 1.66,
   scaleRatio: 3.66,
-  headerFontFamily: [config.headerFontFamily, 'sans-serif'],
-  bodyFontFamily: [config.bodyFontFamily, 'sans-serif'],
+  headerFontFamily: ["Bitter", "sans-serif"],
+  bodyFontFamily: ["Open Sans", "sans-serif"],
   headerWeight: 700,
   googleFonts: [
     {
-      name: config.headerFontFamily,
-      styles: ['700'],
+      name: "Bitter",
+      styles: ["700"]
     },
     {
-      name: config.bodyFontFamily,
-      styles: ['400'],
-    },
-  ],
+      name: "Open Sans",
+      styles: ["400"]
+    }
+  ]
 });
 
 // Hot reload typography in development.
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== "production") {
   typography.injectStyles();
 }
 

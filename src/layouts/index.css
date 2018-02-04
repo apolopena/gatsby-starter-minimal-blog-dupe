@@ -1,0 +1,23 @@
+::selection {
+  color: white;
+  background: #d02e77;
+}
+
+html {
+  background: #fff;
+}
+
+a {
+  color: #d02e77;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: #624464;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr minmax(320px, 1000px) 1fr;
+}

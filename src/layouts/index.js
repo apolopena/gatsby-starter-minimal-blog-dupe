@@ -1,21 +1,21 @@
-import React from 'react';
-import SEO from '../components/SEO';
-import Footer from '../components/Footer';
+import React from "react";
+import Helmet from "react-helmet";
+import Footer from "../components/Footer";
 
-import styles from './layout.module.css';
+import "./index.css";
 
-const TemplateWrapper = (props) => {
-  const { children } = props;
-
-  return (
-    <div>
-      <main className={styles.layout}>
-        <SEO />
-        {children()}
-      </main>
-      <Footer />
-    </div>
-  );
-};
+const TemplateWrapper = ({ children }) => (
+  <div>
+    <Helmet
+      title="Gatsby Starter Minimal Blog"
+      meta={[
+        { name: "description", content: "Gatsby Starter Minimal Blog" },
+        { name: "keywords", content: "Gatsby, Starter, Minimal, Blog" }
+      ]}
+    />
+    <main className="layout">{children()}</main>
+    <Footer />
+  </div>
+);
 
 export default TemplateWrapper;
