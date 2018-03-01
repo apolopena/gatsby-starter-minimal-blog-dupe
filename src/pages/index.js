@@ -1,7 +1,7 @@
-import React from "react";
-import Article from "../components/Article";
+import React from 'react';
+import Article from '../components/Article';
 
-import styles from "./index.module.css";
+import styles from './index.module.css';
 
 const IndexPage = props => {
   const postEdges = props.data.allMarkdownRemark.edges;
@@ -11,9 +11,8 @@ const IndexPage = props => {
       <div className={styles.hero}>
         <h1>Hi.</h1>
         <p>
-          I&apos;m John Doe, a Senior UX Developer with five years of industry
-          experience, specializing in developing React apps with the best UX
-          users can get.
+          I&apos;m John Doe, a Senior UX Developer with five years of industry experience, specializing in developing
+          React apps with the best UX users can get.
         </p>
       </div>
       {postEdges.map(post => (

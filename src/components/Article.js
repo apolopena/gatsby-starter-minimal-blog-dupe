@@ -1,7 +1,7 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from 'react';
+import Link from 'gatsby-link';
 
-import styles from "./Article.module.css";
+import styles from './Article.module.css';
 
 const Article = ({ title, date, excerpt, slug }) => {
   const firstChar = title.charAt(0);
