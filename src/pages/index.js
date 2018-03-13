@@ -4,6 +4,8 @@ import Article from '../components/Article';
 import Wrapper from '../components/Wrapper';
 import SectionTitle from '../components/SectionTitle';
 
+import { media } from '../utils/media';
+
 const Content = styled.div`
   grid-column: 2;
   box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);

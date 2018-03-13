@@ -61,7 +61,7 @@ const Post = props => {
       <Helmet title={`${post.title} | Gatsby Starter - Minimal Blog`} />
       <Header>
         <HeaderContent>
-          <Link to="/">Gatsby Starter - Minimal Blog | Get back to the overview</Link>
+          <Link to="/">Gatsby Starter - Minimal Blog</Link>
         </HeaderContent>
       </Header>
       <Content>

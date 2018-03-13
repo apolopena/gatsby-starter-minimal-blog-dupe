@@ -65,14 +65,14 @@ const TemplateWrapper = props => {
   const { children } = props;
   return (
     <ThemeProvider theme={theme}>
-      <Helmet
-        title="Gatsby Starter Minimal Blog"
-        meta={[
-          { name: 'description', content: 'Gatsby Starter Minimal Blog' },
-          { name: 'keywords', content: 'Gatsby, Starter, Minimal, Blog' },
-        ]}
-      />
       <div>
+        <Helmet
+          title="Gatsby Starter Minimal Blog"
+          meta={[
+            { name: 'description', content: 'Gatsby Starter Minimal Blog' },
+            { name: 'keywords', content: 'Gatsby, Starter, Minimal, Blog' },
+          ]}
+        />
         {children()}
         <Footer>
           &copy; 2018 by John Doe. All rights reserved. <br />
