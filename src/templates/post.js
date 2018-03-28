@@ -2,8 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
-import { darken, lighten } from 'polished';
 import Wrapper from '../components/Wrapper';
+import Header from '../components/Header';
 import Subline from '../components/Subline';
 import { media } from '../utils/media';
 
@@ -23,27 +23,6 @@ const Content = styled.article`
   }
 `;
 
-const Header = styled.header`
-  background: linear-gradient(
-    45deg,
-    ${props => darken(0.1, props.theme.primary)},
-    ${props => lighten(0.1, props.theme.primary)}
-  );
-  grid-column: 1 / -1;
-  margin-left: -1rem;
-  margin-right: -1rem;
-  padding: 2rem 2rem 5rem 2rem;
-  box-shadow: inset 0px -10px 30px 0px rgba(0, 0, 0, 0.1);
-`;
-
-const HeaderContent = styled.div`
-  max-width: 1000px;
-  margin: 0 auto;
-  a {
-    color: white;
-  }
-`;
-
 const Title = styled.h1`
   margin-top: 2rem;
 `;
@@ -60,9 +39,7 @@ const Post = props => {
     <Wrapper>
       <Helmet title={`${post.title} | Gatsby Starter - Minimal Blog`} />
       <Header>
-        <HeaderContent>
-          <Link to="/">Gatsby Starter - Minimal Blog</Link>
-        </HeaderContent>
+        <Link to="/">Gatsby Starter - Minimal Blog</Link>
       </Header>
       <Content>
         <Title>{post.title}</Title>
