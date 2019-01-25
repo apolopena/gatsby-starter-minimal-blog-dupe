@@ -2,10 +2,10 @@ import React from "react";
 import Helmet from "react-helmet";
 import Footer from "../components/Footer";
 
-import "./index.css";
+import "./Layout.css";
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <>
     <Helmet
       title="Gatsby Starter Minimal Blog"
       meta={[
@@ -13,9 +13,9 @@ const TemplateWrapper = ({ children }) => (
         { name: "keywords", content: "Gatsby, Starter, Minimal, Blog" }
       ]}
     />
-    <main className="layout">{children()}</main>
+    <main className="layout">{children}</main>
     <Footer />
-  </div>
+  </>
 );
 
 export default TemplateWrapper;
